@@ -37,6 +37,4 @@ RUN curl -SL https://github.com/roundcube/roundcubemail/releases/download/1.2.2/
 COPY etc/ /etc/
 COPY usr/ /usr/
 
-VOLUME ["/var/www/html/config"]
-
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
